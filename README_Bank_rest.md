@@ -6,7 +6,9 @@
 2. Проверка работы
    Swagger UI: http://localhost:8080/swagger-ui.html
    Тестовые учётные записи:
+   
    ADMIN	email: admin@gmail.com password: admin123
+   
    USER	    email: nastya1152ty@gmail.com password: nastya1152ty
-3. Юнит-тесты
+4. Юнит-тесты
    mvn test
