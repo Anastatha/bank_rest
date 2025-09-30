@@ -1,9 +1,12 @@
 # Система управления банковскими картами
 
-1. Сборка Docker образа и запуск контейнеров
+1. Сборка приложения
+   
+   mvn clean package spring-boot:repackage
+3. Сборка Docker образа и запуск контейнеров
    docker compose up --build
    Приложение доступно на порту 8080, база — на порту 5432
-2. Проверка работы
+4. Проверка работы
    Swagger UI: http://localhost:8080/swagger-ui.html
    Тестовые учётные записи:
    
@@ -18,6 +21,6 @@
    email: nastya1152ty@gmail.com
 
    password: nastya1152ty
-4. Юнит-тесты
-5. 
+5. Юнит-тесты
+
    mvn test
