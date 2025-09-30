@@ -4,9 +4,10 @@
    
    mvn clean package spring-boot:repackage
 3. Сборка Docker образа и запуск контейнеров
+   
    docker compose up --build
-   Приложение доступно на порту 8080, база — на порту 5432
-4. Проверка работы
+   
+5. Проверка работы
    Swagger UI: http://localhost:8080/swagger-ui.html
    Тестовые учётные записи:
    
@@ -21,6 +22,6 @@
    email: nastya1152ty@gmail.com
 
    password: nastya1152ty
-5. Юнит-тесты
+6. Юнит-тесты
 
    mvn test
