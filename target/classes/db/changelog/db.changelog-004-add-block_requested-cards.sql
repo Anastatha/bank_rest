@@ -1,0 +1,1 @@
+ALTER TABLE cards ADD COLUMN block_requested BOOLEAN DEFAULT FALSE;

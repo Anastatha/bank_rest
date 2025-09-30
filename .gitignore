@@ -1,0 +1,35 @@
+# Maven target directory
+/target/
+
+# IDEA, IntelliJ
+/.idea/
+/*.iml
+/out/
+
+# MacOS
+.DS_Store
+
+# Logs
+*.log
+
+# Spring Boot properties
+/application*.yml
+
+# Environment files
+.env
+
+# Generated files
+*.class
+
+# Build artifacts
+*.jar
+*.war
+*.ear
+
+# VS Code
+.vscode/
+
+# Temporary files
+*.tmp
+*.swp
+*~
