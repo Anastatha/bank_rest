@@ -1,0 +1,31 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: bank-system
+      changes:
+        - sqlFile:
+            path: db/changelog/db.changelog-001-create-users.sql
+  - changeSet:
+      id: 2
+      author: bank-system
+      changes:
+        - sqlFile:
+            path: db/changelog/db.changelog-002-create-cards.sql
+  - changeSet:
+      id: 3
+      author: bank-system
+      changes:
+        - sqlFile:
+            path: db/changelog/db.changelog-003-create-transfers.sql
+  - changeSet:
+      id: 4
+      author: bank-system
+      changes:
+        - sqlFile:
+            path: db/changelog/db.changelog-004-add-block_requested-cards.sql
+  - changeSet:
+      id: 5
+      author: bank-system
+      changes:
+        - sqlFile:
+            path: db/changelog/db.changelog-005-initial-data.sql

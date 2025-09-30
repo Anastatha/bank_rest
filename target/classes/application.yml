@@ -1,0 +1,41 @@
+server:
+  port: 8080
+
+# DB
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/bank_rest
+    username: postgres
+    password: 1987
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+# Liquibase
+liquibase:
+  change-log: classpath:db/changelog/db.changelog-master.yaml
+  enabled: true
+
+# Настройки безопасности
+security:
+  jwt:
+     secret: 17f9407360f0f862167211ece609365283dc50b48fa67e718781fb0827d268e3a4ac4661641a0cda556fcae7d165e90928ea85c6fa59c4d9b63a26940eaf3c2317513eec5ae3b1209ebbea579b780ba294fbeada8435953574169a75eb8d31e3a6d5098d05b6656c374f044fcb6f86b13cb2ef314473bf1a7fe270322241e3c1e93d072e8d96f7a09db15b0def967e1dd1127391f4f4ecb623558bdc0a14252fba2766d11ccfdc479a3d32f708e4bf4a3f880cfbcbe22a40ea0022b4a700f147b94d431f235099fd4f3628a821b5e99c794a90eb082c7c6c13f6b8d6d7518964989aba2153aaf9c708071d77a588530a31c1bca0f448f1b5b1286d103de9fa51
+     expiration-ms: 86400000
+
+# Swagger
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+    defaultModelsExpandDepth: 1
+
+app:
+  card:
+    aes-key: developmentkey1234
